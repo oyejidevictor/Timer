@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+
+    <title>LFC_BASHORUN COUNTDOWN_TIMER</title>
+    <!-- Main css -->
+    <link rel="stylesheet" href="Countdown_Timer.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.css">
+
+</head>
+
+<body class="main">
+    <div class="d-flex justify-content-center" id="welcome">
+        <div class="text-center vs">
+            <h3>WELCOME TO <span class="VS">V</span><span class="VS1">SPHERE</span> TIMER</h3>
+            <div>
+                <img src="logo.png" alt="Winners_Logo" width="100px" height="100px">
+            </div>
+            <h1 class="mt-3">LFC_BASHORUN</h1>
+            <h5 class="mt-4"><q><i>OPPORTUNITIES DONT HAPPEN. YOU CREATE THEM.</i></q></h5> <br />
+            <button class="shapeProceed" onclick="proceed()"><strong>PROCEED</strong></button>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center" id="setTime">
+        <div class="logo">
+            <div>
+                <img src="logo.png" alt="Winners_Logo">
+            </div>
+            <div class="timeInput">
+                <form>
+                    <input type="text" id="hours" placeholder="00">
+                    <input type="text" id="minutes" placeholder="00">
+                    <input type="text" id="seconds" placeholder="00">
+                </form>
+                <br/>
+                <button class="shape2 start" type="button" onclick="setTime()"><strong>START</strong></button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="timer" class="time">
+        
+    </div>
+    
+    <div id="currentTime">
+        
+    </div>
+    
+    <div id="reset">
+        <button class="shape1 reset" onclick="reset()"><strong>RESET</strong></button>
+        <div>
+            <div class="upperButton">
+                <button class="shape1 start" type="button" onclick="addH()"><strong>+1 HOUR</strong></button>
+                <button class="shape1 start" type="button" onclick="addM()"><strong>+5 MINS</strong></button>
+                <button class="shape1 start" type="button" onclick="addS()"><strong>+10 SECS</strong></button>
+            </div>
+            <div class="lowerButton">
+                <button class="shape1 start" type="button" onclick="subH()"><strong>-1 HOUR</strong></button>
+                <button class="shape1 start" type="button" onclick="subM()"><strong>-1 MINS</strong></button>
+                <button class="shape1 start" type="button" onclick="subS()"><strong>-10 SECS</strong></button>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <!-- jQuery -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap5/js/bootstrap.js"></script>
+
+    <script src="Countdown_Timer.js"></script>
+    <!-- fonts -->
+    <script src="fontawesome/js/all.min.js"></script>
+
+</body>
+
+</html>
